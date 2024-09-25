@@ -19,7 +19,7 @@ Hi , I'm Giang
 
 ⚡️ Fun fact :
 - HTML & CSS is  programming language (Just kidding🐧)
-- Do u know Gotham is actually in Nottingham ? 
+- Do u know Gotham is actually in Nottingham ? 🦇🦇🦇
              
 ## 🛠 Skills
 - Sleep over 8 hours 🤡
