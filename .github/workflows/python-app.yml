@@ -1,32 +1,38 @@
-name: Python application
+name: Python Build
 
+# Thiết lập khi nào action này sẽ được kích hoạt
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  push:         # Khi có push code vào repository
+    branches:
+      - master  # Chạy khi push vào nhánh master
+  pull_request: # Khi tạo pull request trên nhánh master
 
-permissions:
-  contents: read
-
+# Định nghĩa các job sẽ chạy
 jobs:
   build:
 
-    runs-on: ubuntu-latest   
-
+    # Thiết lập môi trường chạy job này
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4   
+    # Bước 1: Checkout repository code
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v3
+    # Bước 2: Thiết lập phiên bản Python
+    - name: Set up Python
+      uses: actions/setup-python@v2
       with:
-        python-version: "3.10"
+        python-version: '3.10'  # Bạn có thể đặt phiên bản Python cần thiết
+
+    # Bước 3: Cài đặt các dependency (nếu có)
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest pyinstaller
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Build  Subsets.py
+        # Nếu bạn có file requirements.txt thì thêm dòng sau:
+        # pip install -r requirements.txt
+
+    # Bước 4: Chạy file Subset.py
+    - name: Run Python script
       run: |
-        pyinstaller --onefile Subsets.py
+        python Python/p78_Subsets/Subset.py
