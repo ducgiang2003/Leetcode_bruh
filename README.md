@@ -7,7 +7,7 @@
 
 
 # Leetcode solving problem
-- Solution by me write with Python and Golang [Uploading README.md…]()
+- Solution by me write with Python and Golang 
 
 - Updated
 - 9/25 : p78_Subsets
