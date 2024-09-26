@@ -11,6 +11,7 @@
 
 - Updated
 - 9/25 : p78_Subsets
+- 9/26 : p1_2Sum
 ## 🚀 About Me
 Hi , I'm Giang
 ## 🔗 Links
