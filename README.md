@@ -16,7 +16,7 @@
 Hi , I'm Giang
 ## 🔗 Links
 ## Other Common Github Profile Sections
-🧠 I'm a Golang newbie
+🧠 I'm a Golang and Python newbie
 
 ⚡️ Fun fact :
 - HTML & CSS is  programming language (Just kidding🐧)
